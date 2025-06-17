@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TecSoul - Conecte-se com quem entende de tecnologia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #001F33;
+      color: white;
+    }
+    header {
+      padding: 20px;
+      background-color: #003B5C;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 1.5rem;
+    }
+    .logo span {
+      color: #39FF14;
+      font-weight: bold;
+    }
+    .cta {
+      background-color: #39FF14;
+      color: #001F33;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #001F33, #002B44);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .feature {
+      background-color: #003B5C;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .feature h3 {
+      color: #39FF14;
+    }
+    .testimonials, .faq, .countdown, .video, .social {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .faq-item {
+      background-color: #003B5C;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      text-align: left;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #002233;
+      font-size: 0.9rem;
+    }
+    #whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="logo-tecsoul.png" alt="TecSoul Logo" width="40" height="40" style="margin-right: 10px;"/>
+      <span>TecSoul</span>
+    </div>
+    <a class="cta" href="#cadastro">Quero meu smartphone</a>
+  </header>
+
+  <section class="hero">
+    <h1>Conecte-se com quem entende de tecnologia</h1>
+    <p>Os melhores smartphones e eletrônicos, com agilidade, confiança e aquele atendimento que você respeita.</p>
+    <a class="cta" href="#cadastro">Garanta o seu agora</a>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>📦 Entrega Rápida</h3>
+      <p>Envio seguro e ágil para todo o Brasil.</p>
+    </div>
+    <div class="feature">
+      <h3>🔒 Compra Segura</h3>
+      <p>Garantia real, nota fiscal e suporte humanizado.</p>
+    </div>
+    <div class="feature">
+      <h3>🔥 Sempre Atualizado</h3>
+      <p>Os lançamentos mais recentes você encontra aqui primeiro.</p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>O que dizem nossos clientes</h2>
+    <p>"Atendimento excelente e entrega super rápida!" - João M.</p>
+    <p>"Comprei e recomendo. Produto 100% original!" - Carla S.</p>
+  </section>
+
+  <section class="faq">
+    <h2>Dúvidas Frequentes</h2>
+    <div class="faq-item"><strong>📦 Quanto tempo leva a entrega?</strong><br />De 2 a 7 dias úteis dependendo da sua região.</div>
+    <div class="faq-item"><strong>🔒 É seguro comprar?</strong><br />Sim, garantimos nota fiscal e suporte via WhatsApp.</div>
+  </section>
+
+  <section class="video">
+    <h2>Assista e conheça nossos diferenciais</h2>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section class="countdown">
+    <h2>🔥 Oferta relâmpago termina em:</h2>
+    <div id="timer" style="font-size: 2rem; margin-top: 10px;"></div>
+  </section>
+
+  <section class="hero" id="cadastro">
+    <h2>Cadastre-se e receba ofertas exclusivas</h2>
+    <form style="max-width: 400px; margin: auto;">
+      <input type="text" placeholder="Seu nome" style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+      <input type="email" placeholder="Seu melhor e-mail" style="width: 100%; padding: 10px; margin-bottom: 10px;" />
+      <button type="submit" class="cta" style="width: 100%;">Receber ofertas</button>
+    </form>
+  </section>
+
+  <section class="social">
+    <h2>Siga a TecSoul</h2>
+    <p>
+      <a href="https://www.instagram.com" target="_blank" style="color: #39FF14;">Instagram</a> |
+      <a href="https://www.facebook.com" target="_blank" style="color: #39FF14;">Facebook</a> |
+      <a href="https://www.tiktok.com" target="_blank" style="color: #39FF14;">TikTok</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 TecSoul. Todos os direitos reservados.
+  </footer>
+
+  <a id="whatsapp-button" href="https://wa.me/5515981117498" target="_blank">📱</a>
+
+  <script>
+    function startCountdown(duration, display) {
+      let timer = duration, minutes, seconds;
+      const countdownInterval = setInterval(() => {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+          clearInterval(countdownInterval);
+          display.textContent = "Oferta encerrada!";
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      const twoHours = 60 * 60 * 2;
+      const display = document.getElementById("timer");
+      startCountdown(twoHours, display);
+    };
+  </script>
+</body>
+</html>
